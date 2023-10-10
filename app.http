@@ -1,0 +1,53 @@
+//login API
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+   "email":"nani@gmail.com",
+   "password": "nani@123"  
+}
+
+###
+//API-1 details
+GET http://localhost:3000/details/96b31875-b982-4149-996d-951524df877d
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyRW1haWwiOiJuYW5pQGdtYWlsLmNvbSIsImlhdCI6MTY5NDg2MzAyOH0.hklXedQrSzQEA63lkHbVUYv42z6Xi3c01ruiv95H67c
+
+###
+//API-2 update
+PUT http://localhost:3000/update
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyRW1haWwiOiJuYW5pQGdtYWlsLmNvbSIsImlhdCI6MTY5NDg2MzAyOH0.hklXedQrSzQEA63lkHbVUYv42z6Xi3c01ruiv95H67c
+
+{
+   "username": "nani",
+  "userImage":"https://www.bing.com/images/search?view=detailV2&ccid=xyCFbOmG&id=B5370295A3CE8E67CF5D7FBB5681BB62E6FCF569&thid=OIP.xyCFbOmGMQTRluUTr-tz0QHaLJ&mediaurl=https%3a%2f%2fi2.cinestaan.com%2fimage-bank%2f1500-1500%2f144001-145000%2f144302.jpg&exph=1500&expw=996&q=nani+person+pic&simid=608047548707710482&FORM=IRPRST&ck=6B80337B3A0E6BFF9B4F3AEEBA3EAEFE&selectedIndex=2&ajaxhist=0&ajaxserp=0",
+  "totalOrders":40
+}
+
+###
+//API-3 image
+GET http://localhost:3000/image/96b31875-b982-4149-996d-951524df877d
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyRW1haWwiOiJuYW5pQGdtYWlsLmNvbSIsImlhdCI6MTY5NDg2MzAyOH0.hklXedQrSzQEA63lkHbVUYv42z6Xi3c01ruiv95H67c
+
+###
+//API-4 insert
+POST http://localhost:3000/insert
+Content-Type: application/json
+
+{
+  "username": "nani",
+  "email":"nani@gmail.com",
+  "password": "nani@123",
+  "userImage":"https://www.bing.com/images/search?view=detailV2&ccid=xyCFbOmG&id=B5370295A3CE8E67CF5D7FBB5681BB62E6FCF569&thid=OIP.xyCFbOmGMQTRluUTr-tz0QHaLJ&mediaurl=https%3a%2f%2fi2.cinestaan.com%2fimage-bank%2f1500-1500%2f144001-145000%2f144302.jpg&exph=1500&expw=996&q=nani+person+pic&simid=608047548707710482&FORM=IRPRST&ck=6B80337B3A0E6BFF9B4F3AEEBA3EAEFE&selectedIndex=2&ajaxhist=0&ajaxserp=0",
+  "totalOrders":19
+}
+
+###
+//API-5 detele
+DELETE http://localhost:3000/delete/96b31875-b982-4149-996d-951524df877
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyRW1haWwiOiJuYW5pQGdtYWlsLmNvbSIsImlhdCI6MTY5NDg2MzAyOH0.hklXedQrSzQEA63lkHbVUYv42z6Xi3c01ruiv95H67c
+
+###
+//get infromation about all users
+GET http://localhost:3000/detail
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyRW1haWwiOiJuYW5pQGdtYWlsLmNvbSIsImlhdCI6MTY5NDg2MzAyOH0.hklXedQrSzQEA63lkHbVUYv42z6Xi3c01ruiv95H67c
